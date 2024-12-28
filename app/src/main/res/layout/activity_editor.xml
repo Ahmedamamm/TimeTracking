@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/main"
+    tools:context=".ActivityEditor">
+
+    <TextView
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activity Editor"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:textColor="@color/titles"
+        android:gravity="center"
+        android:layout_marginLeft="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="57dp"
+        android:layout_marginBottom="27dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingHorizontal="25dp"
+        android:layout_below="@+id/top"
+        android:background="@drawable/background"
+        android:paddingTop="60dp"
+        android:paddingBottom="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_box"
+            android:padding="12dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="From:"
+                android:textSize="20dp"
+                android:textColor="@color/darkgrey"
+                android:gravity="center"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Click to select time"
+                android:textSize="20dp"
+                android:textColor="@color/main"
+                android:gravity="center"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_box"
+            android:padding="12dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="To:"
+                android:textSize="20dp"
+                android:textColor="@color/darkgrey"
+                android:gravity="center"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Click to select time"
+                android:textSize="20dp"
+                android:textColor="@color/main"
+                android:gravity="center"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_box"
+            android:padding="12dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Activity:"
+                android:textSize="20dp"
+                android:textColor="@color/darkgrey"
+                android:gravity="center"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/main"
+                android:gravity="center"
+                android:background="#00000000"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:background="@drawable/button"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:id="@+id/delete"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:textColor="@color/main"
+            android:gravity="center"
+            android:text="Delete Activity"
+            android:padding="7dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

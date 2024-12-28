@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/green_box"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="12dp">
+
+    <View
+        android:id="@+id/color"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="#00000000"/>
+
+    <TextView
+        android:id="@+id/task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/main"
+        android:gravity="center"/>
+
+</LinearLayout>
